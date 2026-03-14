@@ -52,6 +52,3 @@ streamlit run app.py
 - Successfully detected 99% of fraud transactions
 - Handled class imbalance using SMOTE
 - Deployed as interactive web application
-
-## Author
-Your Name
