@@ -3,7 +3,9 @@ import pickle
 import numpy as np
 import pandas as pd
 
-model = pickle.load(open('fraud_model.pkl', 'rb'))
+import os
+model_path = os.path.join(os.path.dirname(__file__), 'fraud_model.pkl')
+model = pickle.load(open(model_path, 'rb'))
 
 st.title("Credit Card Fraud Detection")
 st.write("Transaction details bharo — fraud hai ya normal pata chalega!")
